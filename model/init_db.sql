@@ -36,11 +36,11 @@ ALTER TABLE `ingredients_by_pizza` ADD CONSTRAINT `ingredients_by_pizza_fk1` FOR
 
 INSERT INTO `pizzas`(image, name, pub_price)
  VALUES ('https://images.unsplash.com/photo-1642829618523-ec3daa857242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZ1biUyMHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60', 'Fun Pizza', 7.50),
-		('https://images.unsplash.com/photo-1530632789071-8543f47edb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaHJvb21zJTIwcGl6emF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60', 'Super Mushroom Pizza', 5.25),
-		('https://images.unsplash.com/photo-1669717879542-65eb286d1b23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BlY2lhbCUyMHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60','Exoclick Special Pizza', 5.25),
+		('https://images.unsplash.com/photo-1530632789071-8543f47edb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaHJvb21zJTIwcGl6emF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60', 'Super Mushroom Pizza', 4.50),
+		('https://images.unsplash.com/photo-1669717879542-65eb286d1b23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BlY2lhbCUyMHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60','Exoclick Special Pizza', 6.00),
 		('https://plus.unsplash.com/premium_photo-1675451537385-e76cd7e78087?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60','Vegan Pizza', 5.25),
 		('https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNwZWNpYWwlMjBwaXp6YXxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60','Classic Pizza', 3.00),
-		('https://images.unsplash.com/photo-1600628421060-939639517883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG9ybyUyMHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60','Luxury Pizza', 7.25);
+		('https://images.unsplash.com/photo-1600628421060-939639517883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG9ybyUyMHBpenphfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60','Luxury Pizza', 7.50);
 
 INSERT INTO `ingredients`(name, price)
  VALUES ('Sliced mushrooms', 0.50),

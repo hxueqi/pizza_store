@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+<br/>
+<p align="center">
+  <h3 align="center">Machine monitor</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+    A simple APP can watching your machine's status
+    <br/>
+    <br/>
+    <a href="https://github.com/hxueqi/machine_monitor.git"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+  </p>
+</p>
 
-## Available Scripts
+## Table Of Contents
 
-In the project directory, you can run:
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Future version project](#Future version project)
+- [Authors](#authors)
+- [Acknowledgements](#acknowledgements)
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screen Shot](public/app_overview.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This application allows users to manage a catalog of pizzas and their corresponding ingredients. Users can add and remove ingredients from existing pizzas and specify their order of appearance.
 
-### `npm test`
+Here's why:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- You can check what pizza you have in the catalog including name, price, and ingredients.
+- You can modify your pizza recipe.
 
-### `npm run build`
+A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project is created by ReactJS, MySQL, CSS, ESLint
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Clone down this repository. You will need node and npm installed globally on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Installation:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To Start Server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
 
-## Learn More
+To Visit App:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+localhost:3000/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+Pizzas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- To see the ingredients of pizza, click the INGREDIENTS button
+- To modify the ingredients of pizza, click the MODIFY button
+- The selling price of a pizza equals the total of all its ingredients plus 50% of the total for the preparation.
 
-### Analyzing the Bundle Size
+Ingredients
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- To add a new ingredient, click on the name of ingredient, the color change to green.
+- To remove an ingredient, click on the name of ingredient, the color change to grey.
 
-### Making a Progressive Web App
+## Future version project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Authentication
+- Do end to end test with Cypress
+- Use Husky for commit configuration and to launch validations
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Deployment
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Xueqi/ReadME-pizza_store/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
+- Please make sure you check your spelling and grammar.
+- Create individual PR for each suggestion.
+- Please also read through the [Code Of Conduct](https://github.com/Xueqi/ReadME-pizza_store/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Creating A Pull Request
 
-### `npm run build` fails to minify
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+- **Xueqi Huang** - _FullstackDev_ - [Xueqi](https://github.com/hxueqi) -
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Jest](https://jestjs.io/)
+- [Eslint](https://eslint.org/)

@@ -14,7 +14,7 @@ const getRequest = (currentSelection, original, pizza_id) => {
         });
       }
       if (currentSelection[id]) {
-        request.total_price += Number(currentSelection[id].price);
+        request.total_price += currentSelection[id].price * 1.5;
       }
       return request;
     },
