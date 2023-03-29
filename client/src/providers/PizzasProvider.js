@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import getPizzas from "../services/api";
+import { getIngredients, getPizzas } from "../services/api";
 
 const PizzasContext = createContext(null);
 
@@ -13,16 +13,18 @@ const usePizzasContext = () => {
 
 function PizzasContextProvider({ children }) {
   const [pizzas, setPizzas] = useState([]);
+  const [ingredients, setIngredients] = useState([]);
   useEffect(() => {
-    getPizzas()
-    .then((response) => {
-        console.log(response);
-        setPizzas(response)
+    getPizzas().then((response) => {
+      setPizzas(response);
     });
-  }, [setPizzas]);
+    getIngredients().then((response) => {
+      setIngredients(response);
+    });
+  }, [setPizzas, setIngredients]);
 
   return (
-    <PizzasContext.Provider value={pizzas}>{children}</PizzasContext.Provider>
+    <PizzasContext.Provider value={{pizzas, ingredients, setPizzas}}>{children}</PizzasContext.Provider>
   );
 }
 

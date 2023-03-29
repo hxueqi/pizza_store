@@ -1,63 +1,213 @@
 .menu {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .menu .menuTitle {
-    font-family: cursive;
-    font-size: 60px;
-  }
-  
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .menuTitle {
+  font-family: cursive;
+  font-size: 60px;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+/* MENU ITEM STYLING */
+
+.menuItem {
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.menuItem .menuItemBackground {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuItemContainer {
+  height: 50%;
+  position: relative;
+  font-size: 20px;
+}
+
+.menuItemTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 800;
+}
+
+.menuItem .menuItemContent {
+  padding: 20px;
+}
+
+.menuButtonGroup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.menuFooterButton {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.menuFooterButton:hover {
+  background: #f5f5f5;
+  transition: 0.3s ease-in;
+}
+
+.menuModifyIngredients,
+.menuIngredients {
+  padding: 20px;
+  font-size: 16px;
+  height: 60%;
+  box-sizing: content-box;
+  margin: 20px;
+}
+
+.menuModifyIngredients .ingredient {
+  padding: 10px 15px;
+  background: rgba(#ccc, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 5px auto;
+  width: 100%;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+}
+
+.menuModifyIngredients .included {
+  background: #d2f7d2;
+  border: 1px solid #236a23;
+}
+
+.menuIngredients .ingredient {
+  width: 100%;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media only screen and (max-width: 1300px) {
   .menuList {
-    width: 70vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
   }
-  
-  /* MENU ITEM STYLING */
-  
-  .menuItem {
-    border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
   }
-  .menuItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
+}
+
+
+.scroll-shadows {
+  max-height: 200px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+
+  background:
+    /* Shadow Cover TOP */
+    linear-gradient(
+      white 30%,
+      rgba(255, 255, 255, 0)
+    ) center top,
+    
+    /* Shadow Cover BOTTOM */
+    linear-gradient(
+      rgba(255, 255, 255, 0), 
+      white 70%
+    ) center bottom,
+    
+    /* Shadow TOP */
+    radial-gradient(
+      farthest-side at 50% 0,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ) center top,
+    
+    /* Shadow BOTTOM */
+    radial-gradient(
+      farthest-side at 50% 100%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ) center bottom;
   
-  .menuItem div {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .menuItem h1,
-  .menuItem p {
-    margin-left: 20px;
-  }
-  
-  @media only screen and (max-width: 1300px) {
-    .menuList {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .menuList {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+  background-repeat: no-repeat;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll;
+}
+
+
+
+/* Not important to the functionality, just for this particular demo */
+.scroll-shadows {
+  list-style: none;
+  padding-right: 0.5rem;
+}
+.scroll-shadows > * {
+  padding: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font: 500 100% system-ui, sans-serif;
+}
+.scroll-shadows {
+  --scrollbarBG: transparent;
+  --thumbBG: #90a4ae;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.scroll-shadows::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-shadows::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.scroll-shadows::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}

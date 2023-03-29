@@ -4,18 +4,19 @@ import "../styles/Menu.css";
 import { usePizzasContext } from "../providers/PizzasProvider";
 
 function Menu() {
-  const pizzas = usePizzasContext() || [];
+  const {pizzas} = usePizzasContext() || [];
   return (
     <div className="menu">
       <h1 className="menuTitle">Our Menu</h1>
       <div className="menuList">
-        {pizzas.map((pizza, key) => {
+        {pizzas.map(({ image, name, id, pub_price }, key) => {
           return (
             <MenuItem
               key={key}
-              //   image={menuItem.image}
-              name={pizza.name}
-              price={pizza.pub_price}
+              image={image}
+              name={name}
+              id={id}
+              price={pub_price}
             />
           );
         })}
