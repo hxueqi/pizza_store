@@ -1,12 +1,12 @@
 <br/>
 <p align="center">
-  <h3 align="center">Machine monitor</h3>
+  <h3 align="center">Pizza Recipe</h3>
 
   <p align="center">
-    A simple APP can watching your machine's status
+    A simple APP can DIY your pizza
     <br/>
     <br/>
-    <a href="https://github.com/hxueqi/machine_monitor.git"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hxueqi/pizza_store.git"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
   </p>
@@ -24,7 +24,7 @@
 
 ## About The Project
 
-![Screen Shot](public/app_overview.png)
+![Screen Shot](client/public/Pizza_recipe.png)
 
 This application allows users to manage a catalog of pizzas and their corresponding ingredients. Users can add and remove ingredients from existing pizzas and specify their order of appearance.
 
