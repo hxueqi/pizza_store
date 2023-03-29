@@ -37,7 +37,9 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ## Built With
 
-This project is created by ReactJS, MySQL, CSS, ESLint
+- Front-end: HTML, CSS, JavaScript, React
+- Back-end: Node.js, Express
+- Database: MySQL
 
 ## Getting Started
 
